@@ -7,8 +7,8 @@ API_HASH = getenv("API_HASH", "")
 BOT_TOKEN = getenv("BOT_TOKEN", "")
 OWNER_ID = int(getenv("OWNER_ID", ""))
 STRING_SESSION = getenv("STRING_SESSION", "")
-SUDO_USERS = list(map(int, getenv("SUDO_USERS", "5392070730").split()))
-REPO_URL = getenv("REPO_URL", "https://github.com/badmunda98/PBXPLUGINS_2.0")
+SUDO_USERS = list(map(int, getenv("SUDO_USERS", "6898413162").split()))
+REPO_URL = getenv("REPO_URL", "https://github.com/PBSUKH/Userbotplugin2.0")
 BRANCH = getenv("BRANCH", "master")
 
 from dotenv import load_dotenv
@@ -33,8 +33,8 @@ class Config:
     HEROKU_APIKEY = getenv("HEROKU_APIKEY", None)
 
     # github related configs
-    PLUGINS_REPO = getenv("PLUGINS_REPO", "Badmunda98/PBXPLUGINS_2.0")
-    DEPLOY_REPO = getenv("DEPLOY_REPO", "Badhacker98/PBX_2.0")
+    PLUGINS_REPO = getenv("PLUGINS_REPO", "PBSUKH/Userbotplugin2.0")
+    DEPLOY_REPO = getenv("DEPLOY_REPO", "PBSUKH/Userbot2.0")
 
     # storage dir: you may or may not edit
     DWL_DIR = "./downloads/"
@@ -47,7 +47,7 @@ class Config:
     AUTH_USERS = filters.user()
     BANNED_USERS = filters.user()
     MUTED_USERS = filters.user()
-    DEVS = filters.user([6898413162, 6566179661])
+    DEVS = filters.user([6898413162])
     STAN_USERS = filters.user()
     FORCESUBS = filters.chat()
 
